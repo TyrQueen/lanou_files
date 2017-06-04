@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Shadow</title>
+		
+		<style type="text/css">
+			
+			.div1 {
+				width: 200px;
+				height: 200px;
+				background: cyan;
+				margin: 20px auto;
+				box-shadow: -15px 15px 5px #ccc;
+				display: table;
+			}
+			
+			.div1 p {
+				color: black;
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				
+			}
+			
+			.black-ground-1 , .black-ground-2 {
+				width: 300px;
+				height: 100px;
+				background: black;
+				/*display: table-cell;*/
+				margin: 50px auto;
+			}
+			
+			.black-ground-1 p {
+				font-size: 30px;
+				/*vertical-align: middle;*/
+				text-align: center;
+				line-height: 100px;
+				text-shadow: 1px 1px 3px white;
+				/*position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: ;
+				margin-top: ;*/
+			}
+			
+			.black-ground-2 p {
+				font-size: 30px;
+				vertical-align: text-bottom;
+				text-align: center;
+				color: red;
+				text-shadow: 1px 1px 3px white;
+			}
+			
+			/*p {
+				font-size: 30px;
+				/*text-align: center;*/
+				/*text-shadow: 1px 1px 5px white;*/
+				/*position: relative;*/
+				/*left: 150px;*/
+				/*top: 50px;*/
+			/*}*/
+			
+			
+		</style>
+		
+	</head>
+	
+	
+	<body>
+		
+		<div class="div1">
+			<p>几个字</p>
+		</div>
+		
+		<div class="black-ground-1">
+			<p>几个字</p>
+		</div>
+		
+		<div class="black-ground-2">
+			<p>几个字</p>
+		</div>
+		
+		
+	</body>
+</html>

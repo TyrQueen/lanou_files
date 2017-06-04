@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>animation</title>
+		
+		<style type="text/css">
+			@keyframes changColor {
+				from{
+					background: cyan;
+					margin-left: 0px;
+					transform: rotateZ(0deg);
+					
+				}
+				
+				to{
+					background: yellow;
+					margin-left: 700px;
+					transform: rotateZ(720deg);
+				}
+			}
+			
+			div {
+				height: 100px;
+				
+				width: 100px;
+				
+				margin-top: 50px;
+				
+				line-height: 100px;
+				
+				text-align: center;
+				
+				animation-name: changColor;
+				
+				animation-iteration-count: infinite;
+				
+				animation-duration: 2s;
+				
+				animation-fill-mode: forwards;
+				
+				/*animation-delay: 2s;*/
+				
+				animation-timing-function: linear;
+				
+				animation-play-state: running;
+				
+				animation-direction: alternate;
+				
+				animation: changColor 5s ease alternate infinite;
+				
+			}
+			
+			div:hover {
+				animation-play-state: running;
+			}
+			
+			div:active {
+				animation-play-state: paused;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div class="">
+			O
+		</div>
+		
+	</body>
+</html>

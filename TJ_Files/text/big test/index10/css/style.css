@@ -1,0 +1,242 @@
+ /*标签样式初始化*/ 
+/*body,html{margin:0;padding:0;background:#fff;font-size:14px;font-family:Arial,Helvetica,'STHeiti','Microsoft YaHei','sans-serif'}
+form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+img{border:0;}
+ul,li{list-style-type:none;}
+a{color:#00007F;text-decoration:none;}
+a:hover{text-decoration:none;}*/
+.banner1{
+	
+	width: 100%;
+	height: 80px;
+	background: rgba(255,255,255,0.3);
+	position: fixed;
+	z-index: 100;
+}
+.img1{
+		margin-left: 15px;
+		position:fixed;
+			}
+.img2{
+		position:fixed;
+		margin-left: 1000px;
+			}
+.shouye{
+		position: fixed;
+		width: 60px;
+		height: 60px;
+		background: dodgerblue;
+		text-align: center;
+		color: white;
+		line-height: 60px;
+		font-size: 24px;
+				/*padding-left: 80px;*/
+		margin-left: 200px;
+			}
+
+.p1{
+	position: absolute;
+	width: 100%;
+	height:700px;
+	display: inline-block;
+	background: url(../img/background.jpg) left  0 repeat white;
+	/*margin-left: 100px;*/
+	
+}
+.img2_1{
+		position: absolute;
+		width: 900px;
+		height: 600px;
+		margin-left: 500px;
+		margin-top: 100px;
+				
+			}
+
+.xiazai{
+	position: absolute;
+	width: 300px;
+	height: 50px;
+	font-size: 30px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	background: dodgerblue;
+	border-radius: 20px;
+	 margin-top: 450px;
+	 margin-left: 150px;
+}
+.p1 h1{
+	position: absolute;
+	width: 400px;
+	height: 100px;
+	font-size: 60px;
+	font-family: "新宋体";
+	line-height: 100px;
+	text-align: center;
+    /*margin-left: 50px;*/
+   margin-left: 100px;
+   margin-top: 250px;
+}
+.p1 h2{
+	position: absolute;
+	width: 400px;
+	height: 100px;
+	font-size:40px;
+	line-height: 100px;
+	text-align: center;
+	margin-left:100px;
+	margin-top: 325px;
+}	
+.p1 h3{
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	font-size: 25px;
+	color: darkgray;
+    text-align: center;
+	margin-left: 170px;
+	margin-top:525px;
+	
+}
+.banner2{
+	width: 100%;
+	height: 700px; 
+
+}	
+.img3{
+	    position: relative;
+		width: 900px;
+		height: 600px;
+		margin-right: 500px;
+		margin-top: 800px;
+}	
+.banner2 h4{
+	position: relative;
+	width: 400px;
+	height: 100px;
+	font-size: 60px;
+    font-family: "新宋体";
+	/*line-height: 100px;
+	text-align: center;*/
+    margin-left: 950px;
+   margin-top: -500px;
+}
+.banner2 h5{
+	position: relative;
+	width: 400px;
+	height: 100px;
+	font-size:40px;
+	/*line-height: 100px;
+	text-align: center;*/
+	margin-left:950px;
+	margin-top: -90px;
+}
+.banner2 h6{
+	position: relative;
+	width: 400px;
+	height: 100px;
+	font-size: 20px;
+	color: darkgray;
+    text-align: center;
+	margin-left: 950px;
+	margin-top:-60px;
+}
+.banner3{
+	width: 100%;
+	height: 700px; 
+
+}	
+.img4{
+	    position: relative;
+		width: 900px;
+		height: 600px;
+		margin-left: 500px;
+		margin-top:900px;
+}
+.banner3 h1{
+	position: relative;
+	width: 400px;
+	height: 100px;
+	font-size: 60px;
+    font-family: "新宋体";
+	line-height: 100px;
+	text-align: center;
+    margin-left: 50px;
+    margin-top: -500px;
+	}
+
+.banner3 h2{
+	position: relative;
+	width: 400px;
+	height: 100px;
+	font-size:40px;
+	line-height: 100px;
+	text-align: center;
+	margin-left:50px;
+	margin-top:-50px;
+}
+.banner3 h3{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	font-size: 20px;
+	color: darkgray;
+    text-align: center;
+	margin-left: 50px;
+	margin-top:-30px;
+}
+.banner4{
+	width: 100%;
+	height: 700px; 
+}
+.img5{
+	    position: relative;
+		width: 900px;
+		height: 600px;
+		/*margin-right: 500px;*/
+		margin-top: 900px;
+}
+.banner4 h4{
+	  position: relative;
+	  width: 400px;
+	  height: 100px;
+	  font-size: 60px;
+	  font-family: "新宋体";
+	  margin-left:1000px;
+      margin-top: -500px
+}
+.banner4 h5{
+	position: relative;
+	width: 400px;
+	height: 100px;
+	font-size:40px;
+	line-height: 100px;
+	text-align: center;
+	margin-left:950px;
+	margin-top:-100px;
+}
+.banner4 h6{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	font-size: 20px;
+	color: darkgray;
+    text-align: center;
+	margin-left: 950px;
+	margin-top:-50px;
+}
+.foot{
+	position: relative;
+	height: 100px;
+	width: 100%;
+	background-color: ghostwhite;
+	margin-top: 800px;
+}
+.foot a{
+	font-size: 15px;
+	text-align: center;
+	margin-left: 500px;
+	color: gray;
+	/*margin-top: 500px;*/
+	/*line-height: 100px;*/
+}

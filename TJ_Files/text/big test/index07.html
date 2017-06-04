@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style  type="text/css">
+		
+		
+
+        body{background: gainsboro;}
+		.content{margin:150px  auto;
+                width: 320px;
+                height: 500px;
+                position: relative; }
+        .login{ margin: 0 auto;
+                padding-top: 30px;}                
+		.logo{background-image: url("http://mail.qq.com/zh_CN/htmledition/images/logo/qqmail/qqmail_logo_default_200h.png");
+		 height: 100px;
+         width: 244px;
+         margin: 0 auto 20px;
+         background-size: 244px 100px;}
+		#web_login{width: 290px;
+		           margin: 0 auto; }
+		#g_list{background:lightskyblue;
+                height: 89px;
+                width: 250px;
+                border-radius: 4px;
+                list-style: none;}
+                	
+	    #g_u{
+	    	border-bottom: 1px solid red;
+		    position: relative;
+		    margin-left: -39px;}
+		     
+		.inputstyle{width: 273px;
+                   height: 44px;
+                   color:#000;
+                   border: none;
+                   background: 0 0;
+                   padding-left: 15px;
+                   font-size: 16px;}
+        .del_touch{right: 0;              
+                   right: 44px; 
+                   display: block;
+                   width: 48px;
+                   z-index: 1;}
+         #g_p{position: relative;
+             margin-left: -39px;}          
+   #auto_login .wording { position: absolute;
+              left: 40px;
+              line-height: 24px;
+              height: 24px;
+              font-size: 14px;
+              color:#246183;}
+          #go { width: 290px;
+                height: 44px;
+                line-height: 44px;
+                background: #146fdf;
+                border: none;
+                border-radius: 4px;
+                color: #fff;
+                font-size: 16px;
+                margin-top: 15px;
+                display: block;
+                text-align: center;}
+    #switch{width:290px;
+     	    margin:0 auto;}
+     #switch #zc_feedback { width: 290px;
+                position: relative;
+                margin-top: 15px;
+                overflow: hidden;}
+    #switch #zc{float: right;
+     	       margin-left: -10px;
+               color: #246183;
+               line-height: 14px;
+               font-size: 14px;
+               padding: 15px 10px;}
+    #switch #forgetpwd{ float: left;
+     	       margin-left: -10px;
+               color: #246183;
+               line-height: 14px;
+               font-size: 14px;
+               padding: 15px 10px;}
+		</style>
+	</head>
+	<body>
+	<div id="content" class="content">
+	        <div id="login"  class="login">
+	             <div id="logo"  class="logo">  </div>
+    <div id="web_login">
+	   <ul  id="g_list">
+		  <li  id="g_u">
+		    <div id="del_touch_p"  class="del_touch">
+		     <span  id="del_u" class="del_u"  style="display:none;"></span>
+		  </div> 
+		     <input id="u"  class="inputstyle"  name="u" autocorrect="off"  placeholder="QQ号码/手机/邮箱">
+		 </li>
+		  <li id="g_p">
+		  	<div id="del_touch_p" class="del_touch">
+		  		<span id="del_p" class="del_u"  style="display:none;" ></span>
+		  	</div>
+		  	<input  id="p" class="inputstyle" maxlength="16" name="p"  auotcorrect="off"  
+		  		placeholder="请输入您的QQ密码" type="password">
+		  </li>
+		</ul>
+	<div id="auto_login" style="dispaly: block;">
+	 <input id="remember"  checked="checked" type="checkbox">
+	<span class="checkbox"></span>
+	<label class="wording">记住登录状态</label>
+	</div>
+	<div  id="go"  >登录</div>
+	</div>
+	</div>
+	
+	<div id="switch">
+		<div id="zc_feedback">
+			<span id="zc" >注册新账号</span>
+			<span  id="forgetpwd">忘了密码？</span>
+		</div>
+	</div>
+    </div>
+
+	</body>
+</html>

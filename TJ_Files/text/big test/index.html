@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>QQ Mac</title>
+
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.cssss">
+		<link rel="stylesheet" type="text/css" href="css/style_first.css" />
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$.fn.extend({
+				animateCss: function(animationName) {
+					var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+					this.addClass('animated ' + animationName).one(animationEnd, function() {
+						$(this).removeClass('animated ' + animationName);
+					});
+				}
+			});
+			
+			$(document).ready(function() {
+				$(document).scroll(function() {
+					var top = $(document).scrollTop();
+					console.log(top);
+					if(top == 0){
+						$(".mid1-left").animateCss("fadeInDown");
+					}
+					else if(top > 0 && top < 150) {
+						$(".mid1-left").animateCss("fadeInDown");
+						$(".mid1-right").animateCss("fadeInRight");
+					}
+					else if(top > 500 && top < 650) {
+						$(".text_01").animateCss("fadeInDown");
+						$(".mid2-img").animateCss("fadeInUp");
+					}
+					else if(top > 1450 && top < 1600) {
+						$(".text_02").animateCss("fadeInDown");
+						$(".mid3-img").animateCss("fadeInUp");
+					}
+					else if(top > 2550 && top < 2700) {
+						$(".text_03").animateCss("fadeInDown");
+						$(".aiteallimg").animateCss("bounceIn");
+						$(".aiteallimg").animateCss("pulse");
+						$(".mid4-img").animateCss("fadeInUp");
+					}
+					
+					//			}else if(top > 650 && top < 750){
+					//				$(".font1top").animateCss("fadeInDown");
+					//			}
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="top">
+				<div id="header">
+					<h1>
+						<img src="img/qqlogo.png" style="height: auto;width: auto;"/>
+					</h1>
+					<ul id="uli">
+						<li style="background-color: deepskyblue;">
+							<a href="#" class="shouye" title="首页" style="color: white;">首页</a>
+						</li>
+						<li>
+							<a href="QQ_02.html" class="shouye" title="党荔川">党荔川</a>
+						</li>
+						<li>
+							<a href="qzr/index03.html" class="shouye" title="秦祖然">秦祖然</a>
+						</li>
+						<li>
+							<a href="index04.html" class="shouye" title="周雯">周雯</a>
+						</li>
+						<li>
+							<a href="index05.html" class="shouye" title="顾鑫宇">顾鑫宇</a>
+						</li>
+						<li>
+							<a href="index06/index.html" class="shouye" title="易胜畅">易胜畅</a>
+						</li>
+						<li>
+							<a href="index07.html" class="shouye" title="陈迪猛">陈迪猛</a>
+						</li>
+						<li>
+							<a href="wzp/1.html" class="shouye" title="魏志鹏">魏志鹏</a>
+						</li>
+						<li>
+							<a href="index09/index.html" class="zhichi" title="李恒">李恒</a>
+						</li>
+						<li>
+							<a href="index10/qq ipad版.html" class="shouye" title="王文静">王文静</a>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+			<div style="height: 75px;"></div>
+
+			<div id="middle">
+				<div id="mid1">
+					<div class="mid1-left animated">
+						<span id="qqmac">
+						<h1 class="fontlf1">QQ&nbsp;Mac版</h1>
+						<h2 class="fontlf2">遇见不同
+							<span class="point">
+								.
+							</span> 简而不凡
+						</h3>
+						<input type="button" id="btn1" value="立即下载" />
+						<h5 class="fontlf3">版本5.5.1&nbsp;&nbsp;2017/05/31</h5>
+						</span>
+					</div>
+					<div class="mid1-right animated">
+						<img src="img/qqmac-img-xlarge-01-01.png" style="width: 100%; height: 100%;" />
+					</div>
+				</div>
+
+				<div id="mid2">
+					<div id="text_01" class="text_01">
+						<h2 class="font1top animated">智能识别日程</h2>
+						<h3 class="font1bottom ">识别重要消息，一键创建日程</h3>
+					</div>
+					<div id="mid2-img" class="mid2-img">
+						<img src="img/mod-s-planner-bg1-xlarge2-mid.png" style="width: 65%; height: 65%;" />
+					</div>
+				</div>
+
+				<div id="mid3">
+					<div id="text_02" class="text_02">
+						<h2 class="font2top">支持消息撤回</h2>
+						<h3 class="font2bottom">消息发错，一键撤回</h3>
+					</div>
+					<div id="mid3-img" class="mid3-img">
+						<div class="bgimg">
+							<img src="img/withdraw-bg2-xlarge-mid3-01.png" style="width: 90%;" />
+						</div>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+
+				</div>
+
+				<div id="mid4">
+					<div id="text_03" class="text_03">
+						<h2 class="font3top">群聊新增@all</h2>
+						<h3 class="font3bottom">重要消息，一键广播</h3>
+					</div>
+					<div id="mid4-img" class="mid4-img">
+						<img src="img/group-chat-img-xlarge-mid04.png" style="width: 60%; height: 60%;" />
+						<span class="aiteall">
+							<img  class="aiteallimg" src="img/group-chat-atall-large-mid04-01.png"/>
+						</span>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="footer">
+				<p class="wf">腾讯公司&nbsp;版权所有<br> Copyright © 1998 - 2017 Tencent. All Rights Reserved</p>
+			</div>
+
+		</div>
+
+		<script type="text/javascript">
+			var wcli = document.querySelectorAll('#head #uli li a');
+			//			console.log(btns);
+			//			var slider = document.querySelector('#slider');
+			//			var liWidth = document.querySelector('li').offsetWidth;
+			//			console.log(liWidth);
+			for(var i = 0; i < wcli.length; i++) {
+				//				btns[i].index = i;
+				wcli[i].onmouseover = function() {
+					this.style.backgroundColor = '#12b7f5';
+				}
+			}
+		</script>
+
+	</body>
+
+</html>

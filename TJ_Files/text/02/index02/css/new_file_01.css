@@ -1,0 +1,49 @@
+	#head {
+		background-color: black;
+		color: white;
+		text-align: center;
+		padding: 5px;
+		/*border: 1px red solid;*/
+	}
+	
+	#text_01 {
+		float: left;
+		line-height: 30px;
+		text-align: center;
+		background-color: #eeeeee;
+		padding: 5px;
+		height: 300px;
+    	width: 100px;
+    	font-family: "宋体";
+	}
+	
+	#text_02 {
+		margin-left: 30px;
+		float: left;
+		width: 350px;
+		padding: 10px;
+		font-family: arial;
+	}
+	
+	#text_02 ul {
+		padding: 15px;
+		font-family: arial;
+	}
+	
+	#text_03 {
+		margin-left: 30px;
+		float: left;
+		width: auto;
+		padding: 30px;
+	}
+
+	#footer {
+		background-color: black;
+    	color: white;
+    	clear: both;
+    	text-align: center;
+    	padding: 5px;
+    	margin: auto;
+    	/*display: flex;*/
+	}
+	

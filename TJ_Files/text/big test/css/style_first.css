@@ -1,0 +1,265 @@
+body,html{margin:0;padding:0;background:#fff;font-size:14px;font-family:PingFangSC-Light,helvetica neue,hiragino sans gb,arial,microsoft yahei ui,microsoft yahei,simsun,sans-serif}
+form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+img{border:0;}
+ul,li{list-style-type:none;}
+a{color:#000000;text-decoration:none;}
+a:hover{text-decoration:none;}
+a:visited {
+	color: black;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#top {
+	width: 100%;
+	height: 75px;
+	background-color: rgba(255,255,255,0.5);
+	position: fixed;
+	top: 0px;
+}
+
+#header {
+	width: 90%;
+	height: 60px;
+	margin: 15px auto 0 auto;
+	text-align: center;
+}
+
+#header h1 {
+	width: 100px;
+	height: 47px;
+	margin: 0 60px 0 0;
+}
+
+#header ul {
+	/*float: left;*/
+	/*margin-left: 10%;*/
+	display: inline-block;
+	/*color: #000000;*/
+	position: relative;
+	top: -62px;
+	font-size: 16px;
+	height: 75px;
+	line-height: 75px;
+	vertical-align: middle;
+	text-align: center;
+	font-family: "PingFang !important";
+	/*-webkit-text-stroke-width: 0.2px;*/
+}
+
+#header ul li {
+	/*color: #000000;*/
+	width: 75px;
+	float: left;
+	/*margin-left: 30px;*/
+	/*color: black;*/
+	/*background-color: #12B7F5;*/
+}
+
+#header ul li:hover {
+	background-color: #12b7f5;
+}
+
+
+#header ul li:hover a {
+	color: #ffffff;
+}
+
+#middle{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	/*font-family: PingFang !important;*/
+}
+
+#mid1 {
+	background-image: url(../img/slide-img-xlarge-bg1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+	padding-bottom: 10%;
+}
+
+.mid1-left{
+	float: left;
+	/*position: absolute;*/
+	padding-top: 15%;
+	padding-left: 10%;
+	-webkit-animation-duration: 3s;
+  	-webkit-animation-iteration-count: 1;
+}
+
+.fontlf1 {
+	font-size: 80px;
+	font-weight: lighter;
+	font-family: "PingFang";
+  	/*-webkit-animation-delay: 0.5s;*/
+	/*animation: fadeInDown 1s linear both*/
+}
+
+.fontlf2 {
+  	/*-webkit-animation-delay: 0.9s;*/
+	font-weight: lighter;
+	font-size: 45px;
+}
+
+.fontlf3 {
+  	/*-webkit-animation-delay: 1.2s;*/
+	color: gray;
+	font-size: 21px;
+	font-weight: lighter;
+}
+
+#btn1 {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #12b7f5;;
+	border-radius: 50px;
+	color: white;
+	font-family: "PingFang";
+	font-size: 30px;
+	vertical-align: middle;
+	margin: 10px auto 10px;
+	/*-webkit-border: none;*/
+	/*outline: none;*/
+	border: none;
+	/*-webkit-appearance: none;*/
+}
+
+#btn1:hover {
+	background-color: lightskyblue;
+}
+
+.mid1-right{
+	float: right;
+	max-width:100%;
+	width: 55%;
+	margin-top: 7%;
+	margin-right: 3%;
+}
+
+#mid2 {
+	/*background-image: url(../img/gray.jpg);*/
+	background-image: url(../img/slide-img-xlarge-bg2C.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#text_01 {
+	font-family: "PingFang";
+	text-align: center;
+}
+
+.font1top {
+	font-size: 88px;
+	font-weight: 300;
+}
+
+.font1bottom {
+	margin-top: 10px;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+#mid3 {
+	background-image: url(../img/slide-img-xlarge-bg3C.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#text_02 {
+	font-family: "PingFang";
+	text-align: center;
+}
+
+.font2top {
+	margin-top: 200px;
+	font-size: 88px;
+	font-weight: 300;
+}
+
+.font2bottom {
+	margin-top: 10px;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+#mid3-img {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.bgimg {
+	margin-top: 60px;
+	/*background-image: url(../img/withdraw-bg2-xlarge-mid3-01.png) ;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#mid4 {
+	background-image: url(../img/slide-img-xlarge-bg4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 10px;
+}
+
+#text03 {
+	font-family: "PingFang";
+	text-align: center;
+}
+
+.font3top {
+	margin-top: 200px;
+	font-size: 88px;
+	font-weight: 300;
+}
+
+.font3bottom {
+	margin-top: 10px;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+#mid4-img {
+	margin: 40px 0px 0px 110px;
+	/*padding-left: 10%;*/
+}
+
+.aiteall {
+	position: relative;
+	left: -10%;
+	overflow: hidden;
+}
+
+.aiteallimg {
+	margin-bottom: 30%;
+	/*animation-duration: 3s;*/
+	animation-delay: 0.75s;
+  	animation-iteration-count: 1;
+}
+
+#footer{
+	height: 100px;
+	background-color: rgb(242,242,242);
+	text-align: center;
+	font-size: 15px;
+	font-family: "PingFang !important";
+}
+
+.wf {
+	padding-top: 20px;
+	height: 27px;
+	line-height: 27px;
+	color: gray;
+}

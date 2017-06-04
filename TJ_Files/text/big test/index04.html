@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>QQ注册</title>
+		<style type="text/css">
+			/*reset css*/
+			
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			
+			body {}
+			
+			.web-notice {
+				background: #fff6cd;
+				height: 22px;
+				width: 100%;
+				position: absolute;
+				left: 0;
+				display: none;
+				z-index: 9999;
+			}
+			
+			.bg {
+				background: url(img/蓝色渐变body.png) repeat-x;
+				/*background: url(img/企鹅头bg_chs.png) no-repeat center;*/
+			}
+			
+			.container {
+				/*background: red url(img/container-left.png) left bottom no-repeat;*/
+				width: 956px;
+				height: 1000px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			.header {
+				background: url(img/企鹅头bg_chs.png) no-repeat center top;
+				height: 94px;
+				overflow: visible;
+			}
+			
+			.logo {
+				float: left;
+				width: 289px;
+				height: 94px;
+			}
+			
+			.feedback {
+				float: right;
+				color: #fff;
+				margin: 65px 20px 0 0;
+				cursor: pointer;
+				font-size: 5px;
+			}
+			
+			#lang-box {
+				position: absolute;
+				z-index: 99;
+				right: 5px;
+				top: 50px;
+				color: #FFF;
+				font-size: 12px;
+			}
+			
+			.left {
+				width: 210px;
+				background: url(img/container-left.png) left top no-repeat;
+				height: 842px;
+				float: left;
+				padding-top: 50px;
+				float: left;
+			}
+			
+			.cur {
+				background-position: bottom left;
+				width: auto;
+			}
+			
+			.nav_box {
+				margin-left: 2px;
+				background: url(img/left_2.png) left top no-repeat;
+				height: 72px;
+				padding: 10px 0 0 20px;
+				display: block;
+			}
+			
+			.nav_1 {
+				background: url(img/index_icon_1.png) 0 -101px no-repeat;
+				font-size: 20px;
+				color: white;
+				line-height: 26px;
+				padding-left: 30px;
+				height: 26px;
+				color: #616c72;
+			}
+			
+			.dd {
+				line-height: 16px;
+				height: 16px;
+				padding-top: 10px;
+				display: block;
+				color: #616c72;
+				font-size: 12px;
+			}
+			
+			.nav_2 {
+				background: url(img/index_icon_1.png) 0 -12px no-repeat;
+				font-size: 20px;
+				color: white;
+				line-height: 26px;
+				padding-left: 30px;
+				height: 26px;
+				color: #616c72;
+			}
+			
+			.search {
+				background: url(img/index_icon_1.png) 0 -250px no-repeat;
+				width: 179px;
+				height: 185px;
+				margin-left: 7px;
+				margin-top: 97px;
+			}
+			
+			.ipt_box {
+				padding: 100px 0 0 5px;
+			}
+			
+			.key {
+				padding-left: 37px;
+				padding-top: 0px;
+				width: 160px;
+			}
+			
+			.key li {
+				font-family: Geneva, 宋体, Tahoma, sans-serif;
+				font-size: 12px;
+				width: 54px;
+				height: 28px;
+				float: left;
+			}
+			
+			.key li a {
+				color: #696969;
+				padding-left: 18px;
+				display: block;
+				padding-top: 4px;
+				height: 24px;
+			}
+			
+			.item_1 {
+				background: url(img/ipt.png) -267px -70px no-repeat
+			}
+			
+			.item_2 {
+				background: url(img/ipt.png) -267px -97px no-repeat;
+			}
+			
+			.item_3 {
+				background: url(img/ipt.png) -267px -124px no-repeat
+			}
+			
+			.item_4 {
+				background: url(img/ipt.png) -267px -151px no-repeat;
+			}
+			
+			.right {
+				border-top: solid 1px #80add9;
+				border-bottom: solid 1px #d6d9db;
+				background: #f8fdff url(img/right_1600.png) right top no-repeat;
+				padding-bottom: 80px;
+				min-height: 650px;
+				width: 746px;
+				float: left;
+			}
+			
+			.banner {
+				height: 165px;
+				background: url(img/enterBannerC.jpg) center no-repeat;
+				margin-top: 20px;
+				margin-bottom: 30px;
+			}
+			
+			.title {
+				position: relative;
+				width: 604px;
+				height: 40px;
+				margin-left: 53px;
+				border-bottom: 1px solid #ddd;
+			}
+			
+			#title-1 {
+				border-left: solid 3px #59afe4;
+				font-size: 18px;
+				font-family: "微软雅黑";
+				padding-left: 5px;
+				color: #616161;
+			}
+			
+			.one {
+				height: 34px;
+				width: 300px;
+			}
+			
+			.two {
+				width: 60px;
+				height: 23px;
+			}
+			
+			.row {
+				margin-left: 53px;
+				margin-top: 20px;
+			}
+			
+			.row-left {
+				display: inline-block;
+				width: 126px;
+				text-align: right;
+			}
+			
+			.row-right {
+				display: inline-block;
+			}
+			
+			#button11 {
+				/*	height: 52px;*/
+				width: 306px;
+				background: #69b946;
+				color: white;
+				font-size: 22px;
+				line-height: 52px;
+				font-family: 微软雅黑;
+				position: ;
+			}
+			
+			#checkbox1 {
+				color: #000;
+				width: 19px;
+				height: 13px;
+			}
+			
+			.size {
+				font-size: 10px;
+				margin-top: 7px;
+		
+			}
+			
+			.footer {
+				width: 956px;
+				color: #a6a6a6;
+				padding: 20px 0;
+				text-align: center;
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 44px;
+				font-family: Geneva, 宋体, Tahoma, sans-serif;
+				display: block;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--<div class="web-notice" id="web-notice">-</div>-->
+		<div class="bg" id="hbg">
+			<div class="container">
+				<div class="header" id="header">
+					<a href="index.html" class="logo" target="-self" title="QQ注册"></a>
+					<a onclick="feedback(716)" class="feedback" target="_blank" href="http://support.qq.com/write.shtml?guest=1&fid=716&SSTAG=10096-6ce75c36d0ee95ba9eb5b1b5cfd96761864b4777548bc33d-0b763600e54d07bcbb8bd5591337d4abe1c4998328e5972d">意见反馈</a>
+					<div id="lang-box">
+						<span>简体中文</span> |
+						<span>繁体中文</span> |
+						<span>English</span>
+					</div>
+				</div>
+				<!--以下是设置qq账号蓝色三角动画-->
+				<div class="content">
+					<div class="left">
+						<a class="nav_box cur" href="javascript:void(0);">
+							<span class="nav_1">QQ帐号</span>
+							<span class="dd">由数字组成，经典通行帐号</span>
+						</a>
+						<a class="nav_box" href="javascript:void(0);">
+							<span class="nav_2">邮箱帐号</span>
+							<span class="dd">用邮箱地址注册，便于记忆</span>
+						</a>
+						<div class="search">
+							<div class="ipt_box">
+								<form class="search_form" action="http://baidu.com"></form>
+							</div>
+							<ul class="key">
+								<li>
+									<a class="item_1" href="http://haoma.qq.com/shop.html#topic=date&from=zc">生日</a>
+								</li>
+								<li>
+									<a class="item_2" href="http://haoma.qq.com/shop.html#topic=love&from=zc">爱情</a>
+								</li>
+								<li>
+									<a class="item_3" href="http://haoma.qq.com/shop.html#topic=phone&from=zc">手机</a>
+								</li>
+								<li>
+									<a class="item_4" href="http://haoma.qq.com/shop.html#topic=date&from=zc">年度</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="right">
+						<div class="banner"></div>
+						<div class="title">
+							<span id="title-1">
+							注册账号
+						</span>
+						</div>
+						<div class="row">
+							<div class="row-left">
+								昵称
+							</div>
+							<div class="row-right">
+								<input class="one" type="text" name="wd" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="row-left">
+								密码
+							</div>
+							<div class="row-right">
+								<input class="one" type="password" name="wd" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="row-left">
+								确认密码
+							</div>
+							<div class="row-right">
+								<input class="one" type="password" name="wd" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="row-left">
+								性别
+							</div>
+							<div class="row-right">
+								男：<input type="radio" name="x3" value="" /> 女：
+								<input type="radio" name="x3" value="" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="row-left">
+								生日
+							</div>
+							<div class="row-right">
+								<select class="two" name="" id="">
+									<option value="2018">2018</option>
+									<option value="2017">2017</option>
+									<option value="2016">2016</option>
+									<option value="2015">2015</option>
+									<option value="2014">2014</option>
+								</select>
+								<span>年</span>
+								<select class="two" name="" id="">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<span>月</span>
+								<select class="two" name="" id="">
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+								</select>
+								<span>日</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="row-left">
+								所在地
+							</div>
+							<div class="row-right">
+								<select class="two" name="" id="">
+									<option value="湖北">湖北</option>
+									<option value="河南">河南</option>
+									<option value="湖南">湖南</option>
+									<option value="河北">河北</option>
+									<option value="黑龙江">黑龙江</option>
+								</select>
+								<select name="" id="">
+									<option value="武汉">武汉</option>
+									<option value="郑州">郑州</option>
+									<option value="长沙">长沙</option>
+									<option value="哈尔滨">哈尔滨</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="row-left">
+								手机号码
+							</div>
+							<div class="row-right">
+								<input class="one" type="text" name="" id="" value="" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="row-left">
+
+							</div>
+							<div class="row-right">
+								<span style="font-size: 5px; color: lightslategrey;">可通过该手机号码快速找回密码</span></br>
+								<span style="font-size: 5px; color: lightslategrey;">中国大陆地区以外手机号码</span>
+								<a style="font-size: 5px; color: cornflowerblue;" href="">点击这里</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="row-left">
+
+							</div>
+							<div class="row-right">
+								<input type="submit" name="" id="button11" value="立即注册" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="row-left">
+							</div>
+							<div class="row-right">
+								<div class="size">
+									<input type="checkbox" name="" id="checkbox1" value="" />同时开通QQ空间</br>
+								</div>
+								<div class="size">
+									<input type="checkbox" name="" id="checkbox1" value="" />我已阅读并同意相关服务条款和隐私政策
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+		
+			<div class="footer">
+				 Copyright
+				<span>©</span> 
+				1998-2018 Tencent All Rights Reserved 腾讯公司 版权所有
+			</div>
+	</body>
+	
+</html>

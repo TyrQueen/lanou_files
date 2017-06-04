@@ -1,0 +1,78 @@
+/* 标签样式初始化 */
+body,html{margin:0;padding:0;background:#fff;font-size:14px;font-family:Arial,Helvetica,'STHeiti','Microsoft YaHei','sans-serif'}
+form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+img{border:0;}
+ul,li{list-style-type:none;}
+a{color:#00007F;text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.top {
+	padding-top: 0px;
+}
+
+.cool {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cool-3 {
+	width: 25%;
+	float: left;
+}
+
+.logo {
+	font-size: 20px;
+	color: #f14e42;
+	display: inline;
+}
+
+.websitlink {
+	font-size: 12px;
+	color: #999;
+	vertical-align: top;
+	
+}
+
+.cool-9 {
+	width: 75%;
+	float: left;
+	
+}
+
+.nav {
+	float: right;
+	color: #999999;
+	margin-left: 40px;
+	font-size: 14px;
+}
+
+.nav:hover {
+	color: #6BC5D2;
+}
+
+.banner {
+	background: #6BC5D2;
+	padding-top: 100px;
+	padding-bottom: 120px;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.typegraphic {
+	font-size: 400px;
+	color: #FFFFFF;
+	float: left;
+	margin-top: -180px;
+	margin-left: -120px;
+	padding-right: 40px;
+	
+	letter-spacing: -20px;
+}
+
+.slogan {
+	font-size: 36px;
+}

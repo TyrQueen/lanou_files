@@ -1,0 +1,90 @@
+.topicfixed{
+	height: 75px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background: #fff;
+	background-color: rgb(255,255,255);
+	background-image: none;
+	background-repeat:repeat;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-size: auto auto; 
+	border-bottom: 1px solid #f1f1f1;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(241,241,214);
+}
+
+.toppic{
+	max-width: 1170px;
+	min-width: 980px;
+	width: 80%;
+	height: 75px;
+	margin: 0 auto;	
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: 150px;	
+}
+.topside{
+	float: left;
+	width: 59%;
+	
+}
+.topicfixed .logoLink,.topicfixed a:visited{
+	color: #333;
+}
+
+.logoLink{
+	float: left;
+	display: block;
+	width: 106px;
+	height: 0px;
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding-top: 76px;
+	margin-top: 17px;
+	font-size: 0px;
+}
+.topicfixed .logoLink{
+	background: url(../img/QQ.LOGO/logo.png) no-repeat left;
+	background-color: transparent;
+	background-image: url(../img/QQ.LOGO/logo.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-size: auto auto;
+}
+
+.topNav{
+	float: left;
+	width: 450px;
+	padding-left: 18px;
+	text-decoration: none;
+	list-style: none;
+	
+}
+.topNav li{
+	float: left;
+	margin-left: 20px;
+}
+
+.topNav li a{
+	float: left;
+	padding: 0 20px;
+	line-height: 75px;
+	font-size: 1.125em;
+}
+.downWrap{
+	height: 150px;
+	width: 100%;
+	border: 1px solid black;
+}

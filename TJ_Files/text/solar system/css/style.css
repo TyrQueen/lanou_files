@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	background: black;
+	height: 100%;
+	font-family: 微软雅黑, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+.whole-page {
+	height: 100%;
+	width: 100%;
+}
+
+.solar-system {
+	height: 200px;
+	width: 200px;
+	/*position: relative;*/
+	margin: 300px auto;
+	background: red;
+	animation: xuanzhuan 40s infinite linear;
+	text-align: center;
+	/*line-height: 800px;*/
+	border-radius: 50%;
+	/*display: none;*/
+}
+
+.earth-system {
+	margin-left: 300px;
+	margin-top: 300px;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	text-align: center;
+	/*margin: auto;*/
+	background: blue;
+	animation: xuanzhuan 3s infinite linear;
+	border-radius: 50%;
+}
+
+.moon {
+	/*top: 100px;
+	left: 100px;*/
+	margin: 50px;
+	width: 10px;
+	height: 10px;
+	background: #d2d5d6;
+	text-align: center;
+	border-radius: 50%;
+	animation: xuanzhuan 3s infinite linear;
+}
+
+@keyframes xuanzhuan {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(90deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	75% {
+		transform: rotate(270deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

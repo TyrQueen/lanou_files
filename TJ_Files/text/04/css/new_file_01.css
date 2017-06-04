@@ -1,0 +1,67 @@
+	/*.span1 {
+		background: yellow;
+		padding: 10px 30px;
+		border:  1px solid;
+	}
+	
+	.span1:hover {
+		background: blue;
+	}*/
+	
+	.daily_point{
+		display: inline-block;
+		width: 300px;
+		height: 100px;
+		/*background-color: #EEEEEE;*/
+		text-align: center;
+		padding: 5px;
+		
+	}
+	
+	.daily_point ul{
+		/*color: white;*/
+	}
+	
+	.div1 {
+		height: 100px;
+		width: 200px;
+		border: 5px solid black;
+		text-align: center;
+	}
+	
+	.div1 span {
+		line-height: 50px;
+	}
+	
+	/*span:hover {
+		color: white;
+	}*/
+	
+	/*.div1:hover {
+		background: deepskyblue;
+	}*/
+	
+	/*.div1:hover span {
+		color: white;
+	}*/
+	
+	.div1 a {
+		font-size: 16px;
+		text-decoration: none;
+	}
+	
+	.div1 a:link {
+		color: blue;
+	}
+	
+	.div1 a:visited {
+		color: green;
+	}
+	
+	.div1 a:hover {
+		color: red;
+	}
+	
+	.div1 a:active {
+		color: black;
+	}

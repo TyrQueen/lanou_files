@@ -1,0 +1,51 @@
+@base: green;
+@red: @base + #e44e4e;
+@aaa: black;
+
+
+div {
+    background: @base;
+    height: 200px;
+}
+
+span {
+    background: @red;
+}
+
+.div1 {
+    height: 200px;
+    width: 200px;
+    background: @base;
+    .round-radius;
+}
+
+.div2 {
+    height: 200px;
+    width: 200px;
+    background: @aaa;
+    .round-radius(200px);
+}
+
+.round-radius(@size:50px) {
+    border-radius: @size;
+    -moz-border-radius: @size;
+    -webkit-border-radius: @size;
+    
+}
+
+.div3 {
+    @aaa: red;
+    background: @aaa;
+    h1 {
+        color: #00ae86;
+    }
+    span {
+        font-size: 20px;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            color: red;
+        }
+    }
+}

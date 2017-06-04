@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS3边框设置</title>
+		
+		<style type="text/css">
+			div {
+				width: 225px;
+				padding: 20px 0;
+				background: pink;
+				border: 5px dashed blue;
+				text-align: center;
+				background-image: url(../../gif/杀马特头像.jpg);
+				background-repeat: no-repeat;
+			}
+			
+			.border-box {
+				/*background-clip: border-box;*/
+				background-origin: border-box;
+			}
+			
+			.padding-box {
+				/*background-clip: padding-box;*/
+				background-origin: padding-box;
+			}
+			
+			.content-box {
+				/*background-clip: content-box;*/
+				background-origin: content-box;
+			}
+			
+		</style>
+	</head>
+	
+	
+	<body>
+		
+		<h2>background-clip: border-box</h2>
+		<div class="border-box">
+			实例一
+		</div>
+		
+		<h2>background-clip: padding-box</h2>
+		<div class="padding-box">
+			实例二
+		</div>
+		
+		<h2>background-clip: content-box</h2>
+		<div class="content-box">
+			实例三
+		</div>
+		
+		
+	</body>
+</html>

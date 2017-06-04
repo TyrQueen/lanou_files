@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>change color</title>
+		
+		<style type="text/css">
+			#content {
+				width: 400px;
+				height: 20px;
+				margin: 0px auto;
+				text-align: center;
+				vertical-align: middle;
+			}
+			
+			#content ul {
+				height: 20px;
+				width: 400px;
+				text-align: center;
+				list-style: none;
+			}
+			
+			/*#content .firstNav {
+				margin-left: 0px;
+			}*/
+			
+			#content ul li {
+				border-radius: 5px;
+				border: solid 1px black;
+				width: 100px;
+				/*margin-left: 10px;*/
+				float: left;
+				margin-left: 10px;
+			}
+			
+			.color {
+				height: 400px;
+				width: 400px;
+				background: red;
+			}
+		</style>
+		
+	</head>
+	
+	
+	<body>
+		<div id="content">
+			<ul>
+				<li class="firstNav" id="btn1">
+					This is red
+				</li>
+				<li id="btn2">
+					This is green
+				</li>
+				<li id="btn3">
+					This is blue
+				</li>
+			</ul>
+			<div class="color">
+				
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var Bcolor = document.getElementsByClassName("color");
+			var obtn1 = document.getElementById("btn1");
+			var obtn2 = document.getElementById("btn2");
+			var obtn3 = document.getElementById("btn3");
+			obtn1.onclick = function(){
+				Bcolor[0].style.backgroundColor = 'red';
+			}
+			obtn2.onclick = function(){
+				Bcolor[0].style.backgroundColor = 'green';
+			}
+			obtn3.onclick = function(){
+				Bcolor[0].style.backgroundColor = 'blue';
+			}
+		</script>
+		
+	</body>
+</html>

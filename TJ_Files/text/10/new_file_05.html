@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>change document content</title>
+		
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#outside {
+				width: 400px;
+				height: 300px;
+				border: solid 1px;
+				text-align: center;
+			}
+			
+			span {
+				display: inline-block;
+				width: 100px;
+				height: 30px;
+				border: solid 1px;
+				text-align: center;
+			}
+			
+			#container {
+				width: 400px;
+				height: 200px;
+				border: solid 1px;
+				text-align: center;
+			}
+		</style>
+		
+		
+		
+	</head>
+	
+	
+	<body>
+		
+		<div id="outside">
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<p id="container"></p>
+		</div>
+		
+		
+		
+		<script type="text/javascript">
+			var oSpan = document.getElementsByTagName("span");
+			var oP = document.getElementById("container");
+			oSpan[0].onclick = function( ) {
+				oP.innerHTML = oSpan[0].innerHTML;
+			}
+			oSpan[1].onclick = function() {
+				oP.innerHTML = oSpan[1].innerHTML;
+			}
+			oSpan[2].onclick = function() {
+				oP.innerHTML = oSpan[2].innerHTML;
+			}
+		</script>
+		
+		
+		
+	</body>
+</html>

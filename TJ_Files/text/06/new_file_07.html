@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>2D</title>
+		
+		<style type="text/css">
+			div {
+				width: 100px;
+				height: 100px;
+				background: red;
+				margin: 20px;
+				display: inline-block;
+				line-height: 100px;
+				text-align: center;
+			}
+			
+			span {
+				display: inline-block;
+				width: 100px;
+				text-align: right;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<div>文字</div>未变形<div>文字</div><br />
+		
+		<div>文字</div>旋转<div style="transform: rotate(30deg);">文字</div><br />
+		
+		<div>文字</div>平移<div style="transform: translate(200px, 80px);">文字</div><br />
+		
+		<div>文字</div>缩放<div style="transform: scale(2.0, 0.75);">文字</div><br />
+		
+		<div>文字</div>倾斜<div style="transform: skewY(45deg);">
+			<p style="transform: skewY(-45deg);">文字</p>
+		</div><br />
+		
+		<p><span>用户名：</span><input type="text" name="user" size="20"></p>
+		<p><span>密码：</span><input type="password" name="psw" size="20"></p>
+		
+	</body>
+</html>

@@ -1,0 +1,38 @@
+div {
+  background: green;
+  height: 200px;
+}
+span {
+  background: #e4ce4e;
+}
+.div1 {
+  height: 200px;
+  width: 200px;
+  background: green;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
+.div2 {
+  height: 200px;
+  width: 200px;
+  background: black;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+}
+.div3 {
+  background: red;
+}
+.div3 h1 {
+  color: #00ae86;
+}
+.div3 span {
+  font-size: 20px;
+}
+.div3 a {
+  text-decoration: none;
+}
+.div3 a:hover {
+  color: red;
+}

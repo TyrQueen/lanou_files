@@ -1,0 +1,24 @@
+@fsizeinmid: 20px;
+
+.pdgstyle(@ptop:10px, @pright:20px, @pbottom:30px, @pleft:40px) {
+    padding: @ptop @pright @pbottom @pleft;
+}
+
+.php {
+    font-size: @fsizeinmid;
+    .pdgstyle(20px, 10px, 20px, 10px);
+}
+
+.free {
+    font-size: @fsizeinmid;
+}
+
+@backgcolor: #00007F;
+
+a {
+    color: @backgcolor;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>bigger</title>
+		
+		<style type="text/css">
+			#div1 {
+				width: 100px;
+				height: 100px;
+				background: red;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div id="div1">
+			
+		
+		</div>
+		
+		<script type="text/javascript">
+			var oDiv = document.getElementById('div1');
+			var timer = setInterval( function(){
+				i++;
+				oDiv.style.width = 100 + i + 'px';
+				oDiv.style.height = 100 + i + 'px';
+			},50);
+		</script>
+		
+	</body>
+</html>
+
+		
+		

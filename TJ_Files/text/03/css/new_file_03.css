@@ -1,0 +1,27 @@
+	#head {
+		background-color: black;
+		color: white;
+		text-align: center;
+		padding: 5px;
+		/*border: 1px red solid;*/
+	}
+	
+	.div1 {
+		border: 3px solid gray;
+		display: inline-block;
+		position: relative;
+		/*margin-left: 100px;*/
+	}
+	
+	.div1 img {
+		float: left;
+		/*margin-left: 300px;*/
+	}
+	
+	.div1  p {
+		font: "微软雅黑",10px;
+		position: absolute;
+		left: 0px;
+		text-align: center;
+		/*height: 500px;*/
+	}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+			
+		<title>ChangeColor</title>
+
+		<style type="text/css">
+			#content {
+				text-align: center;
+				width: 400px;
+				height: 440px;
+				margin: 20px auto;
+			}
+			
+			button {
+				/*height: 20px;*/
+				font-family: "微软雅黑";
+			}
+			
+			#color {
+				border: solid 1px black;
+				width: 400px;
+				height: 400px;
+				/*background-color: black;*/
+			}
+		</style>
+
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+		</script>
+	</head>
+
+	<body>
+
+		<div id="content">
+			<button type="button" onclick="myFunction1()">RED</button>
+			<button type="button" onclick="myFunction2()">GREEN</button>
+			<button type="button" onclick="myFunction3()">BLUE</button>
+			<div id="color">
+
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			var oColor = document.getElementById("color");
+			//			var ColorArr[] = {"red", "green", "blue"};
+			function myFunction1() {
+				oColor.style.backgroundColor = "red";
+			}
+
+			function myFunction2() {
+				oColor.style.backgroundColor = "green";
+			}
+
+			function myFunction3() {
+				oColor.style.backgroundColor = "blue";
+			}
+		</script>
+	</body>
+
+</html>

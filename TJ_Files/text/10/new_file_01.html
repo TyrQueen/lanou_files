@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			#container {
+				width: 200px;
+				/*height: 200px;*/
+				background: lightblue;
+				margin: 100px auto;
+				text-align: center;
+			}
+			#test {
+				display: inline-block;
+				margin-left: 20px;
+			}
+			#container ul {
+				display: none;
+			}
+			
+		</style>
+		
+		
+	</head>
+	
+	<body>
+
+	<div id="container">
+		<a href="#">Setting</a>
+		<span id="test">
+			test
+		</span>
+		<ul>
+			<li>search-setting1</li>
+			<li>search-setting2</li>
+			<li>search-setting3</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+			var oContainer = document.getElementById("container");
+//			alert(oContainer);
+//			console.log(oContainer);
+			var oGeta = oContainer.getElementsByTagName('a');
+			var oSpan = document.getElementById('test');
+			var oListArr = oContainer.getElementsByTagName('ul');
+			oGeta[0].onmouseover = function() {
+				oListArr[0].style.display = "block";
+			}
+			oSpan.onmouseover = function(){
+				oListArr[0].style.display = "none";
+			}
+		</script>
+	</body>
+</html>

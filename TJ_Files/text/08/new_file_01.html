@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			img {
+				width: 300px;
+				height: 300px;
+			}
+			
+			.magic {
+				transform-style: preserve-3d;
+				animation: rotate 120s linear infinite;
+			}
+			
+			.magic:hover {
+				transform-style: preserve-3d;
+				
+			}
+			
+			.magic_a {
+				/*transform: tralateZ(-150px);*/
+				
+				margin: 300px;
+			}
+			
+			.magic_b {
+				transform: rotateY(90deg);
+				transform-origin: right;
+				position: absolute;
+				top: 300px;
+				left: 0px;
+			}
+			
+			.magic_c {
+				transform: rotateY(270deg) translateX(150px);
+				position: absolute;
+				top: 300px;
+				left: 450px;
+				
+			}
+			
+			.magic_d {
+				transform: rotateY(360deg) translateZ(300px);
+				position: absolute;
+				top: 300px;
+				left: 300px;
+				
+			}
+			
+			/*.magic_e {
+				transform: rotateX(270deg) translateY(-150px);
+				position: absolute;
+				top: 150px;
+				left: 300px;
+			}
+			
+			.magic_f {
+				transform: rotateX(90deg) translateY(150px);
+				position: absolute;
+				top: 450px;
+				left: 300px;
+			}
+			*/
+			
+			.magic_e {
+				transform: rotateX(90deg) translateY(150px) translateZ(150px);
+				position: absolute;
+				top: 300px;
+				left: 300px;
+			}
+			
+			.magic_f {
+				transform: rotateX(90deg) translateY(150px) translateZ(-150px);
+				position: absolute;
+				top: 300px;
+				left: 300px;
+			}
+			
+			@keyframes rotate{
+				50% {
+					transform-origin: center;
+					transform: rotateX(7200deg) rotateY(3600deg) rotateZ(3600deg);
+
+				}
+			}
+			
+		</style>
+		
+		
+	</head>
+	
+	
+	<body>
+		<div class="magic">
+			
+			<img class="magic_a" src="img/black_01.jpg"/>
+			<img class="magic_b" src="img/blue.jpg"/>
+			<img class="magic_c" src="img/orange.jpg"/>
+			<img class="magic_d" src="img/red_02.jpg"/>
+			<img class="magic_e" src="img/gray.jpg"/>
+			<img class="magic_f" src="img/yellow.jpg"/>
+			
+			
+			
+		</div>
+		
+		
+	</body>
+</html>

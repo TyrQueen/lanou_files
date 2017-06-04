@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>daibu</title>
+		
+		<style type="text/css">
+			
+			#btn {
+				width: 80px;
+				height: 30px;
+				background: lightgray;
+				border: solid 1px gray;
+				float: right;
+				line-height: 30px;
+				text-align: center;
+			}
+			
+			#login {
+				width: 400px;
+				height: 300px;
+				background: lightyellow;
+				position: relative;
+				top: 200px;
+				left: 400px;
+				display: none;
+			}
+			
+			.word {
+				height: 40px;
+				background: #898989;
+				text-align: center;
+				line-height: 40px;
+			}
+			
+			.close {
+				height: 40px;
+				width: 40px;
+				background: lightgray;
+				text-align: center;
+				line-height: 40px;
+				font-size: 30px;
+				position: absolute;
+				top: 0px;
+				right: 5px;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div id="btn">
+			sign in
+		</div>
+		<div id="login">
+			<div class="word">
+				daibu number
+			</div>
+			<div class="close">
+				X
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			
+			var oBtn = document.getElementById('btn');
+			var oLogin = document.getElementById('login');
+			var oLoginArr = oLogin.getElementsByTagName('div');
+			var oBody = document.getElementsByTagName('body'); 
+//			var oClose = document.getElementsByClassName('close');
+			oBtn.onclick = function() {
+				oLogin.style.display = "block";
+				oBtn.style.display = "none";
+				oBody[0].style.background = 'rgba(0,0,0,0.1)';
+			}
+			
+			oLoginArr[1].onclick = function() {
+				oLogin.style.display = "none";
+				oBtn.style.display = "block";
+				oBody[0].style.background = 'white';
+			}
+			
+			
+		</script> 
+		
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<style type="text/css">
+			#test {
+				width: 600px;
+				margin: 50px auto;
+			}
+			
+			#char {}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="text">
+			<p id="char"></p>
+
+		</div>
+
+	</body>
+
+</html>
+<script type="text/javascript">
+	var str = "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111";
+	var oChar = document.getElementById("char");
+
+	var i = 0;
+	var s = "";
+
+	var timer = setInterval(function() {
+			s = s + str.charAt(i++);
+			oChar.innerHTML = s + '';
+			if(i == str.length) {
+				clearInterval(timer);
+				oChar.innerHTML = s;
+			}
+		},
+		100);
+</script>
