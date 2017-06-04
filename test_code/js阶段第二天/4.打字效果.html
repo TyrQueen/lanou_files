@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#text{
+				width: 600px;
+				margin: 50px auto;
+			}
+			#char{
+				display: inline;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="text">
+			<p id="char"></p>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	var str = '23岁贩毒，38岁发明杀软，45岁身价亿万妻妾成群，杀死邻居后逃亡……现在这位传奇老爷子“又杀回来了”！';
+	var oChar = document.getElementById('char');
+	//字符串的下标
+	var i = 0;
+	//把新取到的字符串存起来
+	var s = '';
+	var timer = setInterval(function(){
+		s = s + str.charAt(i++);
+		oChar.innerHTML = s + '_';
+		if (i == str.length) {
+			clearInterval(timer);
+			oChar.innerHTML = s;
+		}
+	},100);
+</script>

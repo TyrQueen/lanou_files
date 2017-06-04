@@ -1,0 +1,32 @@
+//.php{
+//  display: inline-block;
+//  height: 60px;
+//  font-size: 20px;
+//  padding-left: 30px;
+//  padding-right: 10px;
+//  background: url(../img/nav_list_left.png) left 0 no-repeat white;
+//}
+@fontSize20:22px;
+@fontSize18:18px;
+.Dis-Play(@mode:inline-block){
+    display: @mode;
+}
+.Padding-All(@Ptop:10px,@Pleft:30px,@Pbottom:10px,@Pright:30px){
+   padding-top: @Ptop;
+   padding-left: @Pleft;
+   padding-bottom: @Pbottom;
+   padding-right: @Pright; 
+   
+}
+.Animation-All(){
+    animation: ;
+   -moz-animation: ;
+   -webkit-animation: ;
+   -o-animation: ;
+   -ms-animation: ;
+}
+.php{
+   .Dis-Play;
+   font-size: @fontSize20; 
+   .Padding-All(20px,0px,30px,5px);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			#container{
+				width: 200px;
+				/*height: 200px;*/
+				background: lightblue;
+				margin: 100px 0;
+				text-align: center;
+			}
+			#test{
+				display: inline-block;
+				margin-left: 20px;
+			}
+			#container ul{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<a href="###">设置</a>
+			<span id="test">测试</span>
+			<ul>
+				<li>搜索设置1</li>
+				<li>搜索设置2</li>
+				<li>搜索设置3</li>
+			</ul>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+//	int char  float long(C语言,强类型语言)
+//	JavaScript(js 弱类型语言 var)
+//getElementById :通过ID名称获取某个元素
+	var oContainer = document.getElementById('container');
+//	alert(oContainer);
+//	console.log(oContainer);
+	var oGeta = oContainer.getElementsByTagName('a');
+	var oListArr = oContainer.getElementsByTagName('ul');
+	var oSpan = document.getElementById('test');
+	
+	oGeta[0].onmouseover = function(){
+		oListArr[0].style.display = "block";
+	}
+	oSpan.onmouseover = function(){
+		oListArr[0].style.display = 'none';	
+	}
+</script>

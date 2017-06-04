@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background: orangered;
+				position: relative;
+				animation: move 3s infinite;
+			}
+			@keyframes move{
+				/*from{left: 0px;top: 0px;}
+				to{left: 500px;top: 0px;background: deeppink;}*/
+				0%{
+					left: 0px;top: 0px;}
+				50%{left: 250px;top: 200px;background: greenyellow;}
+				100%{
+					left: 500px;top: 0px;background: deeppink;
+				}
+			}
+/*
+ * @keyframes:关键帧；
+ * move：动画名称
+ * {}：需要改变的样式
+ * from / 0%：开始值
+ * to / 100%：结束值
+ * */
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

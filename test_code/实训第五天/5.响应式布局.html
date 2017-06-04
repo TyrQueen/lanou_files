@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				height: 100px;
+				margin-top: 20px;
+				border: 1px solid;
+			}
+			@media (max-width: 700px),(min-width: 900px) {
+				.div1{background: green;}
+				.div2{
+					background: red;
+					display: none;
+				}
+			}
+			
+			
+			
+			/*@media (min-width: 100px) and (max-width:600px) {
+				.div1{background: red;}
+				.div2{background: yellow;}
+			}
+			@media only screen and (min-width: 601px) {
+				.div1{background: yellow;}
+				.div2{background: red;}	
+			}*/
+		</style>
+	</head>
+	<body>
+		<div class="div1"></div>
+		<div class="div2"></div>
+	</body>
+</html>

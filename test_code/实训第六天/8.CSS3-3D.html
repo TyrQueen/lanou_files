@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+				background: red;
+				font-size: 50px;
+				line-height: 200px;
+				margin: 20px auto;
+				transition: all 1s; 
+			}
+			.a:hover{
+				transform: rotateX(360deg);
+			}
+			.b:hover{
+				transform: rotateY(360deg);
+			}
+			.c:hover{
+				transform: rotateZ(360deg);
+			}
+			.d:hover{
+
+				transform: scaleX(2);
+			}
+			.e:hover{
+				background: green;
+				transform: scaleY(2);
+			}
+			.f:hover{
+				transform: scale(2,2);
+			}
+			.g:hover{
+				transform: translateX(100px);
+			}
+			.h:hover{
+				background: green;
+				transform: translateY(100px);
+			}
+			.i:hover{
+				transform: translate(100px,100px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a">rotateX</div>
+		<div class="b">rotateY</div>
+		<div class="c">rotateZ</div>
+		<div class="d">scaleX</div>
+		<div class="e">scaleY</div>
+		<div class="warp">
+			<div class="f">scaleZ</div>
+		</div>
+		<div class="g">translateX</div>
+		<div class="h">translateY</div>
+		<div class="warp">
+			<div class="i">translateZ</div>
+		</div>
+	</body>
+</html>

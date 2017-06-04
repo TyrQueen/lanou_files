@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/* 标签样式初始化 */
+body,html{margin:0;padding:0;background:#fff;font-size:14px;font-family:Arial,Helvetica,'STHeiti','Microsoft YaHei','sans-serif'}
+form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+img{border:0;}
+ul,li{list-style-type:none;}
+a{color:#00007F;text-decoration:none;}
+a:hover{text-decoration:none;}
+			ul{float: left;}
+			ul>li{
+				width: 50px;
+				height: 30px;
+				background: lightblue;
+				text-align: center;
+				line-height: 30px;
+			}
+			div{
+				width: 150px;
+				height: 150px;
+				background: #cccfff;
+				float: left;
+				line-height: 150px;
+				text-align: center;
+				font-size: 45px;
+				color: white;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+	</body>
+</html>
+<script type="text/javascript">
+		var oLi = document.getElementsByTagName('li');
+	var oDiv = document.getElementsByTagName('div');
+	for (var i = 0;i < oLi.length;i++) {
+		
+		oLi[i].onmouseover = function(){
+			for (var x = 0;x < oLi.length;x++) {
+	//this 谁调用，this就是谁
+	
+				if(this == oLi[x]){
+					for (var y = 0;y < oDiv.length;y++) {
+						if (x == y) {
+							oDiv[y].style.display = 'block';
+						} else{
+							oDiv[y].style.display = 'none';
+						}
+					}
+				}
+			}
+		}
+	}
+</script>

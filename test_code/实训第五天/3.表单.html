@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--<form action="" method="">
+			form标签：是各种表单标签的父级or
+			action:引号中间写数据提交的地址
+			method：提交方式 
+				get直接提交：value会在提交地址后以字符串拼接的方式显示
+				post:先把数据打包，然后再传送到地址，地址栏不会显示提交的内容
+		</form>-->
+		<form action="http://www.baidu.com" method="post">
+			用户名:<input type="text" name="wd" id="wd" value="" /></br>
+			密码:<input type="password" name="ps" id="ps" value="123456" /> </br>
+			男:<input type="radio" name="x3"  value="" />
+			女:<input type="radio" name="x3"  value="" /> </br>
+			兴趣爱好:LOL <input type="checkbox" name="a4"/>
+			Dota <input type="checkbox" name="a4"/>
+			HTML <input type="checkbox" name="a4"/>
+			Shopping <input type="checkbox" name="a4"/> </br>
+			<input type="button" name="" id="" value="别点我" /> </br>
+			<select name="">
+				<optgroup label="中国">
+					<option value="武汉">武汉</option>
+				<option value="河北">河北</option>
+				<option selected="selected" value="湖南">湖南</option>
+		</optgroup>
+			<optgroup label="中国">
+					<option value="武汉">武汉</option>
+				<option value="河北">河北</option>
+				<option selected="selected" value="湖南">湖南</option>
+		</optgroup>	
+<!--selected="selected"设置默认选择-->
+			</select> </br>
+			<textarea name="" rows="10" cols="30" style="resize: vertical;">
+				resize:none 用户无法调整元素的宽高
+				both：用户可以调整元素的宽高
+				horizontal：用户可以调整元素的宽度
+				vertical：用户可以调整元素的高度
+			</textarea> </br>
+			<input type="file" name="" id="" value="" />
+			
+			<input type="submit" name="" id="" value="提交" />
+		</form>
+	</body>
+</html>

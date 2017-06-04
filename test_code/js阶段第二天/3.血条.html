@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#down{
+				width: 300px;
+				height: 30px;
+				background: green;
+			}
+			#btn{
+				width: 100px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+				border-radius: 5px;
+				background: lightgray;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="down"></div>
+		<div id="btn">开始</div>
+	</body>
+</html>
+<script type="text/javascript">
+	var oDown = document.getElementById('down');
+	var oBtn = document.getElementById('btn');
+	//可视区域的宽度 offsetWidth
+	var look = oDown.offsetWidth;
+	oBtn.onclick = function(){
+		var timer = setInterval(function(){
+			look = look - 2;
+			if (look <= 100) {
+				oDown.style.background = 'red';
+				if (look <= 0) {
+					oBtn.innerHTML = 'GAME OVER';
+					clearInterval(timer);
+				}
+			}
+			oDown.style.width = look + 'px';
+			console.log(oDown.offsetWidth);
+		},100);
+	}
+</script>

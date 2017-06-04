@@ -1,0 +1,41 @@
+div {
+  background: #6ef4de;
+  height: 200px;
+}
+span {
+  background: #00a690;
+}
+.div1 {
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  height: 200px;
+  width: 200px;
+  background: #6ef4de;
+}
+.div2 {
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  height: 200px;
+  width: 200px;
+  background: #00a690;
+}
+.div3 h1 {
+  color: #00A690;
+}
+.div3 span {
+  font-size: 20px;
+}
+.div3 span a {
+  text-decoration: none;
+}
+.div3 span a:hover {
+  color: red;
+}
+h2 a {
+  color: green;
+}
+p {
+  color: red;
+}

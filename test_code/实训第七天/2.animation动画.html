@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			@keyframes changColor{
+				from{
+					background: cyan;
+					margin-left: 0px;
+					transform: rotateZ(0deg);
+				}
+				to{
+					background: yellow;
+					margin-left: 700px;
+					transform: rotateZ(720deg);
+				}
+			}
+			div{
+				height: 100px;
+				width: 100px;
+				/*动画名称*/
+				animation-name: changColor;
+				/*动画持续时间*/
+				animation-duration: 3s;
+				/*动画结束后的状态：是停留在原地还是返回到初识位置*/
+				animation-fill-mode: forwards;
+				/*动画延迟时间*/
+				/*animation-delay: 2s;*/
+				/*运动的速度曲线*/
+				animation-timing-function: ease-in;
+				/*动画是否执行*/
+				animation-play-state: paused;
+				/*动画循环执行的次数*/
+				animation-iteration-count: 2;
+				/*动画是否会反向播放*/
+				animation-direction: alternate;
+			animation: changColor 5s ease alternate infinite;	   
+			}
+			div:hover{
+				animation-play-state: running;
+			}
+		</style>
+	</head>
+	<body>
+		<div>1234</div>
+	</body>
+</html>

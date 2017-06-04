@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			img{width: 300px;height: 300px;}
+			.magic{
+				transform-style: preserve-3d;
+				animation:  rotate 100s linear infinite ;
+				/*animation-play-state: paused;*/
+			}
+			@keyframes rotate{
+				50%{
+					transform-origin: center top; 
+					transform: rotateX(3600deg) rotateY(2000deg);
+				}
+			}
+			
+			.magic_a{
+				margin: 300px;
+			}
+			.magic_b{
+				transform: rotateY(90deg);
+				transform-origin: right;
+				position: absolute;
+				top: 300px;
+				left: 0;
+			}
+			.magic_c{
+				transform: rotateY(270deg) translateX(150px);
+				position: absolute;
+				top: 300px;
+				left: 450px;
+			}
+			.magic_d{
+				position: absolute;
+				top: 300px;
+				left: 300px;
+				transform: translateZ(300px);
+			}
+			.magic_e{
+				transform: rotateX(270deg) translateY(-150px);
+				position: absolute;
+				top: 150px;
+				left: 300px;
+			}
+			.magic_f{
+				transform: rotateX(90deg) translateY(150px);
+				position: absolute;
+				top: 450px;
+				left: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="magic">
+			<img class="magic_a" src="img/timg1.jpeg"/>
+			<img class="magic_b" src="img/timg2.jpeg"/>
+			<img class="magic_c" src="img/timg3.jpeg"/>
+			<img class="magic_d" src="img/timg4.jpeg"/>
+			<img class="magic_e" src="img/timg5.jpeg"/>
+			<img class="magic_f" src="img/timg6.jpeg"/>
+		</div>
+	</body>
+</html>

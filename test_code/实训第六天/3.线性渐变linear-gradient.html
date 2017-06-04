@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				height: 100px;
+				background: red;
+		/*设置开始和结束的颜色*/
+				background-image: linear-gradient(red,blue);
+		/*设置具体渐变的方向 */
+				background-image: linear-gradient(to right,red,blue);
+		/*向右上角渐变*/
+				background-image: linear-gradient(to top right,red,blue);
+				/*设置一个角度*/
+				background-image: linear-gradient(45deg,red,blue);
+/*0deg是从下到上，90deg是从左到右，180deg是从上到下*/
+				/*渐变过程中设置多个颜色*/				
+				background-image: linear-gradient(to right,red,cyan,rgb(255,255,0),#4f4f4f);
+				/*在渐变过程中可以为某个颜色设置百分比*/
+				background-image: linear-gradient(to right,red 10%,blue 40%,green 50%);
+				/*特殊手法*/
+				background-image: linear-gradient(to right,red 10%,blue 15%,blue 85%,red 15%);
+				
+				
+				
+			}
+			
+				
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

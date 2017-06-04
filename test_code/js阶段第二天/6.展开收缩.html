@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#show{
+				width: 300px;
+				min-height: 50px;
+				border: 1px solid black;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" name="" id="" value="展开" />		
+		<input type="button" name="" id="" value="收缩" />
+		<div id="show">
+			
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	var str = '不 矢口 亻十 么 日寸 候 ， 亻奄 口斤 言兑 言仑 土云 有 辶寸 氵虑 敏 感 字 节 白勺 言兑 氵去 ， 于 是 ， 亻奄 学 会 了 扌斥 字 ， 后 来 ， 亻奄 米青 礻申 分 歹刂 了';
+	var oShow = document.getElementById('show');
+	var oBtn = document.getElementsByTagName('input');
+	var timer1 = null;
+	var timer2 = null;
+	var i = 0;
+	//展开
+	oBtn[0].onclick = function(){
+		clearInterval(timer1);
+		clearInterval(timer2);
+		if(i == str.length) return;
+		timer1 = setInterval(function(){
+			oShow.innerHTML += str.charAt(i++);
+			if (i == str.length) {
+				clearInterval(timer1);
+			}
+		},100);
+	}
+	//收缩
+	oBtn[1].onclick = function(){
+		clearInterval(timer1);
+		clearInterval(timer2);
+		if(!i) return; 
+		timer2 = setInterval(function(){
+			oShow.innerHTML = str.substring(0, --i);
+			if(i == 0){
+				clearInterval(timer2);
+			}
+		},100);
+	}
+</script>

@@ -1,0 +1,48 @@
+@base: #6ef4de;
+@red:@base - #e44e4e;
+div{
+    background: @base;
+    height: 200px;
+}
+span{
+    background: @red;
+}
+.round-radius(@size:50px){
+    border-radius: @size;
+    -moz-border-radius: @size;
+    -webkit-border-radius: @size;
+}
+.div1{
+   .round-radius;
+   height: 200px;
+   width: 200px;
+   background: @base; 
+}
+.div2{
+   .round-radius(100px);
+   height: 200px;
+   width: 200px;
+   background: @red;
+}
+.div3{
+    h1{color: #00A690;}
+    span{
+        font-size: 20px;
+        a{
+            text-decoration: none;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
+@color: red;
+h2{
+    @color:green;
+    a{
+        color: @color;
+    }
+}
+p{
+    color: @color;
+}

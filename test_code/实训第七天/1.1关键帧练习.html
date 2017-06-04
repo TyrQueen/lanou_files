@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background: red;
+				position: relative;
+				animation: move 3s infinite;
+			}
+			@keyframes move{
+				0%{left: 0px;top: 0px;}
+				25%{left: 500px;top: 0px;background: green;}
+				50%{
+					left: 500px;top: 500px;background: orangered;border-radius: 50%;
+				}
+				75%{
+					left: 0;top: 500px;background: blue;
+				}
+				100%{
+					left: 0;top: 0;
+					background: yellow;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+	</head>
+	<body>
+		<div class="banner">
+			<div class="banner_1">
+				<img src="img/logo-img.png"/>
+				<a class="php" href="">PHP</a>
+				<a class="free" href="">免费资料</a>
+				<img class="hot_img" src="img/hot_1.png"/>
+				<a class="free-2" href="">免费视频</a>
+				<a class="free-2" href="">就业前景</a>
+				<a href="">
+					<img src="img/h5_1.png" alt="" />
+				</a>
+				<a href="">
+					<img src="img/JavaEE.png"/>
+				</a>
+				<a class="banner_last" href="">蓝鸥官网首页</a>
+			</div>
+		</div>
+		<div class="insert">
+			<div class="insert_1">
+				<img class="animated shake" src="img/cloud1.png"/>
+				<img class="animated fadeInLeft" src="img/tit_1.png"/>
+				<img class="animated fadeInRight" src="img/tit_2.png"/>
+				<img class="animated fadeInUp" src="img/huojian.png"/>
+				<img class="animated shake" src="img/cloud2.png"/>
+				<div class="insert_last">挑战年薪30万</div>
+			</div>
+		</div>
+		<div class="hot">
+			<div class="hot_title">
+				<h2>全球互联网<span>最火</span>技术<span>PHP</span></h2>
+				<p>PHP因开发周期短、免费、稳定、安全、简单易学、跨平台性等因素，入选全球五大最受欢迎的编程语言，更是Web开发首选语言。</p>
+			</div>
+			<div class="wow fadeInRight hot_img1">
+				<img src="img/cont1.jpg"/>
+				<img src="img/cont2.jpg"/>
+				<img src="img/cont3.jpg"/>
+			</div>
+			<div class="hot_last">
+				PHP入门容易吗？
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">
+		new WOW().init();
+		var oEmp = document.getElementsByClassName("emp1");
+		for (var i = 0 ;i < oEmp.length; i++) {
+			oEmp[i].sClass = oEmp[i].className;
+			oEmp[i].onmouseover = function(){
+				this.className = this.sClass + ' ' + this.dataset.sclass;
+			}
+			oEmp[i].onmouseout = function(){		
+				this.className = this.sClass;
+			}	
+		}
+</script>

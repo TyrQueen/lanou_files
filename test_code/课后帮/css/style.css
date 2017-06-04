@@ -1,0 +1,151 @@
+/* 标签样式初始化 */
+body,html{margin:0;padding:0;background:#fff;font-size:14px;font-family:Arial,Helvetica,'STHeiti','Microsoft YaHei','sans-serif'}
+form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+img{border:0;}
+ul,li{list-style-type:none;}
+a{color:#00007F;text-decoration:none;}
+a:hover{text-decoration:none;}
+.top{
+	padding-top: 20px;
+	padding-bottom: 35px;
+	/*border: solid;*/
+}
+.cool{
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.cool-3{
+	width: 25%;
+	float: left;
+}
+.logo{
+	/*字体大小*/
+	font-size: 20px;
+	color: #f14e42;
+	display: inline;
+}
+.websitelink{
+	font-size: 12px;
+	color: #999;
+	/*文字对齐方式*/
+	vertical-align: top;
+}
+.cool-9{
+	width: 75%;
+	float: left;
+}
+.nav{
+	float: right;
+	color: #999;
+	margin-left: 40px;
+	font-size: 14px;
+}
+.nav:hover{
+	color: #6bc5d2;
+}
+.banner{
+	background: #6BC5D2;
+	padding-top: 100px;
+	padding-bottom: 120px;
+}
+.container{
+	margin-left: auto;
+	margin-right: auto;
+}
+.typographic{
+	font-size: 400px;
+	color: #FFFFFF;
+	float: left;
+	margin-top: -182px;
+	margin-left: -120px;
+	padding-right: 40px;
+	/*调节字间距*/
+	letter-spacing: -20px;
+}
+.slogan{
+	font-size: 36px;
+	color: #FFFFFF;
+}
+.introduction{
+	color: #177c8a;
+	margin-top: 20px;
+}
+.call{
+	font-size: 18px;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	padding: 10px 30px;
+	margin-top: 30px;
+	display: inline-block;
+	border-radius: 5px;
+}
+.call:hover{
+	background: rgba(255,255,255,0.2);
+}
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	/*文字居中*/
+	text-align: center;
+}
+.poemtitle{
+	color: #F14E42;
+	font-size: 24px;
+	margin: 30px 0;
+}
+.poemcontent{
+	color: #6f6f70;
+	/*设置行高*/
+	line-height: 25px;
+	text-align: left;
+	display: inline-block;
+}
+.contentblock{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+	margin-top: 30px;
+}
+.photo{
+	height: 264px;
+	width: 200px;
+	float: left;
+	margin-right: 70px;
+	margin-left: 60px;
+}
+.visiontitle{
+	color: #F14E42;
+	font-size: 24px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+.visioncontent{
+	color: #6F6F70;
+	line-height: 25px;
+	text-align: left;
+}
+.contacttitle{
+	font-size: 24px;
+	color: #6F6F70;
+	margin: 30px 0;
+}
+.email{
+	font-size: 18px;
+	background: #6BC5D2;
+	padding: 10px 40px;
+	color: #FFFFFF;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+.footer{
+	padding: 35px 0;
+	background: #f3f3f3;
+	text-align: center;
+	border-top: 1px solid #e3e3e3;
+}
+.footercontent{
+	color: #bfbfbf;
+}

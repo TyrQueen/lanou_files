@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.loader{
+				width: 30%;
+				height: 200px;
+				border: 1px solid black;
+			}
+			.loader-1{
+				position: relative;
+				top: 40%;
+				left: 45%;
+				/*border: 1px solid;*/
+			}
+			.loader-1 i{
+				display: block;
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background: #ccc;
+				position: absolute;
+			}
+			.loader-1 i:nth-child(1){
+				top: 25px;
+				left: 0;
+				animation: loading 1s ease 0s infinite;
+			}
+			.loader-1 i:nth-child(2){
+				top: 17px;
+				left: 17px;
+				animation: loading 1s ease -0.12s infinite;
+			}
+			.loader-1 i:nth-child(3){
+				top: 0;
+				left: 25px;
+				animation: loading 1s ease -0.24s infinite;
+			}
+			.loader-1 i:nth-child(4){
+				top: -17px;
+				left: 17px;
+				animation: loading 1s ease -0.36s infinite;
+			}
+			.loader-1 i:nth-child(5){
+				top: -25px;
+				left: 0;
+				animation: loading 1s ease -0.48s infinite;
+			}
+			.loader-1 i:nth-child(6){
+				top: -17px;
+				left: -17px;
+				animation: loading 1s ease -0.6s infinite;
+			}
+			.loader-1 i:nth-child(7){
+				top: 0px;
+				left: -25px;
+				animation: loading 1s ease -0.72s infinite;
+			}
+			.loader-1 i:nth-child(8){
+				top: 17px;
+				left: -17px;
+				animation: loading 1s ease -0.84s infinite;
+			}
+			@keyframes loading{
+				50%{
+					transform: scale(0.4);opacity: 0.3;
+				}
+				100%{
+					transform: scale(1);opacity: 1;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="loader">
+			<div class="loader-1">
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+			</div>
+		</div>
+	</body>
+</html>

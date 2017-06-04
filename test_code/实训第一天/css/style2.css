@@ -1,0 +1,16 @@
+.div1{
+	height: 200px;
+	width: 200px;
+	background-color: greenyellow;
+	/*display: inline;*/
+	/*display: block;*/
+}
+.span1{
+	background-color: greenyellow;
+	/*display: inline;*/
+	/*display: block;*/
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+	/*既可以公用一行，还可以设置宽高*/
+}
