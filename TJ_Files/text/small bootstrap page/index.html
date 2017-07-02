@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Document</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+</head>
+
+<body>
+
+    <!--<nav class="navbar navbar-fixed-top" style="background:rgb(66, 133, 245)">-->
+    <!--<div class="container-fluid">-->
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <!--<div class="navbar-header">
+                <a class="navbar-brand glyphicon glyphicon-menu-hamburger" href="#" style="color:white; height:20px"></a>
+            </div>-->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!--<div class="collapse navbar-collapse" >
+                <p class="navbar-text" style="color:white;font-size:20px; ">午安煎饼计划</p>
+            </div>-->
+    <!-- /.navbar-collapse -->
+    <!--</div>-->
+    <!-- /.container-fluid -->
+    <!--</nav>-->
+
+
+    <div class="warpper container-fluid">
+
+
+
+        <div class="navbar navbar-header navbar-fixed-top clearfix" role="navigation">
+            <div class="navbar-header">
+                <div class="left-btn">
+                    <a class="navbar-brand glyphicon glyphicon-menu-hamburger" href="#" style="color:white;"></a>
+                </div>
+                <div class="right-navbar ">
+                    <h3 class="right-text navbar-text">午安煎饼计划</h3>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="parentbox clearfix">
+            <div class="box1">
+                <div class="box2">
+                    <div class="box">
+                        <div class="percent">
+                            <div class="percentNum" id="count">0</div>
+                            <div class="percentB">%</div>
+                        </div>
+                        <div id="water" class="water">
+                            <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                                <use xlink:href="#wave"></use>
+                            </svg>
+                            <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                                <use xlink:href="#wave"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="userid container-fluid">
+                <p>产品经理组：二马</p>
+            </div>
+        </div>
+
+        <div class="btnblk container">
+            <input class="btn btn1 btn-primary" type="button" value="提交周报">
+
+            <input class="btn btn2 btn-default" type="button" value="我要请假">
+        </div>
+    </div>
+
+
+
+
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="display: none;">
+        <symbol id="wave">
+            <path d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z"></path>
+            <path d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z"></path>
+            <path d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z"></path>
+            <path d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z"></path>
+        </symbol>
+    </svg>
+
+    <script type="text/javascript">
+        var cnt = document.getElementById("count");
+        var water = document.getElementById("water");
+        var percent = cnt.innerText;
+        var interval;
+        interval = setInterval(function () {
+            percent++;
+            cnt.innerHTML = percent;
+            water.style.transform = 'translate(0' + ',' + (percent) + '%)';
+            if (percent == 100) {
+                clearInterval(interval);
+            }
+        }, 80);
+    </script>
+</body>
+
+</html>
