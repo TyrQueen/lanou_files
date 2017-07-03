@@ -178,26 +178,26 @@ body {
 }
 
 
-.btn1 {
-    display: inline-block;
+.container .btn1 {
+    /*display: inline-block;*/
     width: 300px;
     height: 45px;
     font-size: 18px;
     line-height: 20px;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: rgb(66, 133, 245);
-    margin: 0 auto 15px;
+    /*margin: 0 auto 15px;*/
 }
 
-.btn2 {
-    display: inline-block;
+.container .btn2 {
+    /*display: inline-block;*/
     width: 300px;
     height: 45px;
     font-size: 18px;
     line-height: 20px;
-    border-radius: 10px;
+    border-radius: 25px;
     color: rgb(66, 133, 245);
     border: 1px solid rgb(66, 133, 245);
     background-color: rgb(243, 243, 243);
-    margin: 15px auto 0;
+    /*margin: 15px auto 0;*/
 }
